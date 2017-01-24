@@ -29,3 +29,26 @@ Yours Faithfully,<br />
 <?php echo date("d/m/Y"); ?></div>
 </body>
 </html>
+
+
+<?php
+
+$body = ob_get_clean();
+
+        $body = iconv("UTF-8","UTF-8//IGNORE",$body);
+
+        include("mpdf/mpdf.php");
+        $mpdf=new \mPDF('c','A4','','' , 0, 0, 0, 0, 0, 0); 
+
+        //write html to PDF
+        $mpdf->WriteHTML($body);
+ 
+        //output pdf
+        //$mpdf->Output('demo.pdf','D');
+
+        //open in browser
+        $mpdf->Output();
+
+        //save to server
+        //$mpdf->Output("mydata.pdf",'F');
+?>
