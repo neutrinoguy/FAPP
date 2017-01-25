@@ -46,21 +46,14 @@
          <h1>Simple Leave application</h1>
 
 
-<form action="form.php" method="post">
+<form action="" method="post">
 <select name="reason">
-<option value="Techevent">Techevent</option>
-<option value="Marraige">Marraige</option>
-<option value="Sick">Sick</option>
-<option value="Sport">Sport</option>
+<option value="/FAPP/techevent.php">Techevent</option>
+<option value="/FAPP/marriage.php">Marraige</option>
 </select>
 <input type="submit" name="submit" value="Go" />
 </form>
-<?php
-if(isset($_POST['submit'])){
-$selected_val = $_POST['reason'];  // Storing Selected Value In Variable
-echo "You have selected :" .$selected_val;  // Displaying Selected Value
-}
-?>
+
 
 
         
@@ -83,3 +76,10 @@ echo "You have selected :" .$selected_val;  // Displaying Selected Value
 
 </body>
 </html>
+
+<?php
+
+if(isset($_POST['submit'])){
+    header('Location: '.$_POST['reason']);
+    exit;
+}
