@@ -43,7 +43,7 @@
 
       <div class="starter-template">
          
-         <h1>Simple Leave application</h1>
+         <h1>You are writing application for?</h1>
 
 
 <form action="" method="post">

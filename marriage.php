@@ -43,7 +43,7 @@
 
       <div class="starter-template">
          
-         <h1>Simple Leave application</h1>
+         <h1>Leave application for Marriage</h1>
 
 
             <form class="form-horizontal" role="form" method="post" action="application.php">
