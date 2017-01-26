@@ -7,7 +7,6 @@
 <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
 <title>FAPP</title>
 
-
 <!-- Google icon -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
