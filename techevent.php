@@ -43,7 +43,7 @@
 
       <div class="starter-template">
          
-         <h1>Simple Leave application</h1>
+         <h1>Leave application for Tech event</h1>
 
 
             <form class="form-horizontal" role="form" method="post" action="application.php">
@@ -80,7 +80,7 @@
           <div class="form-group">
             <label for="reason" class="col-sm-2 control-label">Reason</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="reason" name="reason" placeholder="Tech event" value="<?php echo $_POST["reason"]; ?>" >
+              <input type="text" class="form-control" id="reason" name="reason" placeholder="Tech event" value="Techevent" >
             </div>
           </div>
 
