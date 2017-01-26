@@ -149,7 +149,83 @@
 
 <!-- Propeller Bootstrap datetimepicker -->
 <script type="text/javascript" language="javascript" src="http://propeller.in/components/datetimepicker/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript">
+	$(function () {
+		
+		/* Default date and time picker */
+		$('#datetimepicker-default').datetimepicker({
+			//locale: 'ru'
+			//'format' : "YYYY-MM-DD hh:mm:ss", // HH:mm:ss
+		});
 
+		/* Time picker only */
+		$('#timepicker').datetimepicker({
+			format: 'LT'
+		});
+		
+		/* Linked date and time picker */
+		// start date date and time picker 
+		$('#datepicker-start').datetimepicker();
+
+		// End date date and time picker 
+        $('#datepicker-end').datetimepicker({
+            useCurrent: false 
+        });
+		
+		// start date picke on chagne event [select minimun date for end date datepicker]
+        $("#datepicker-start").on("dp.change", function (e) {
+            $('#datepicker-end').data("DateTimePicker").minDate(e.date);
+        });
+		// Start date picke on chagne event [select maxmimum date for start date datepicker]
+        $("#datepicker-end").on("dp.change", function (e) {
+            $('#datepicker-start').data("DateTimePicker").maxDate(e.date);
+        });
+		
+		// View mode datepicker [shows only years and month]
+		$('#datepicker-view-mode').datetimepicker({
+			viewMode: 'years',
+            format: 'MM/YYYY'
+		});
+		
+		// Disabled Days of the Week (Disable sunday and saturday) [ 0-Sunday, 1-Monday, 2-Tuesday   3-wednesday 4-Thusday 5-Friday 6-Saturday]
+		$('#datepicker-disabled-days').datetimepicker({
+			 daysOfWeekDisabled: [0, 6]
+		});
+		
+		// Inline datepicker
+		$('#datepicker-inline').datetimepicker({
+			inline: true
+		});
+		
+		// Datepicker in popup
+		$('#datepicker-popup-inline').datetimepicker({
+			inline: true
+		});
+		
+		// get date from popup datepicker
+		$("#datepicker-dialog .btn-primary").on("click", function () {
+			$("#datepicker-dialog").modal('hide');
+
+			var datepickerID =  $("[data-datepicker-popup='true']").attr("data-datepicker");
+			var popupDatepickerValue = $("#"+datepickerID).data('date');
+			var elementTagName = $("[data-datepicker-popup='true']").prop("tagName")
+
+			if(elementTagName == "INPUT" || elementTagName == "TEXTAREA"){
+				$("[data-datepicker="+datepickerID+"]").val(popupDatepickerValue);	
+			}else {
+				$("[data-datepicker="+datepickerID+"]").text(popupDatepickerValue);	
+			}
+			
+        });
+		$("[data-header-left='true']").parent().addClass("pmd-navbar-left");
+		// Datepicker left header
+		$('#datepicker-left-header').datetimepicker({
+			'format' : "YYYY-MM-DD HH:mm:ss", // HH:mm:ss
+		});
+		
+	});
+	
+</script>
 
 </body>
 </html>
