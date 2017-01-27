@@ -16,7 +16,7 @@
 <br /></div>
 &nbsp;Respected Sir/Madam,<br />
 <br />
-&nbsp;Myself,<?php echo $_POST["name"]; ?> from <?php echo $_POST["department"]; ?> class En-no <?php echo $_POST["en-no"]; ?>.I have to attend a <?php echo $_POST["reason"]; ?> from <?php echo $_POST["from_date"]; ?> to <?php echo $_POST["to_date"]; ?>.So, I request you to grant my leave.
+&nbsp;Myself,<?php echo $_POST["name"]; ?> from <?php echo $_POST["department"]; ?> class En-no <?php echo $_POST["en-no"]; ?>.I have to attend a <?php echo $_POST["reason"]; ?> <?php $_POST["$day_format"]; ?> .So, I request you to grant my leave.
 <br />
 <br />
 &nbsp;Awaiting your favourable reply,Thank you.<br />
