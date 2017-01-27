@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <head>
 <title>Application</title>
@@ -16,7 +17,7 @@
 <br /></div>
 &nbsp;Respected Sir/Madam,<br />
 <br />
-&nbsp;Myself,<?php echo $_POST["name"]; ?> from <?php echo $_POST["department"]; ?> class En-no <?php echo $_POST["en-no"]; ?>.I have to attend a <?php echo $_POST["reason"]; ?> <?php $_POST["$day_format"]; ?> .So, I request you to grant my leave.
+&nbsp;Myself,<?php echo $_POST["name"]; ?> from <?php echo $_POST["department"]; ?> class En-no <?php echo $_POST["en-no"]; ?>.I have to attend a <?php echo $_POST["reason"]; ?> from <?php echo $_POST["from_date"]; ?> to <?php echo $_POST["to_date"]; ?>.So, I request you to grant my leave.
 <br />
 <br />
 &nbsp;Awaiting your favourable reply,Thank you.<br />
@@ -30,25 +31,29 @@
 </body>
 </html>
 
+<br />
 
-<?php
 
-$body = ob_get_clean();
+<?php 
 
-        $body = iconv("UTF-8","UTF-8//IGNORE",$body);
 
-        include("mpdf/mpdf.php");
-        $mpdf=new \mPDF('c','A4','','' , 0, 0, 0, 0, 0, 0); 
+$datetime1 = new DateTime($_POST["from_date"]);
 
-        //write html to PDF
-        $mpdf->WriteHTML($body);
- 
-        //output pdf
-        //$mpdf->Output('demo.pdf','D');
+$datetime2 = new DateTime($_POST["to_date"]);
 
-        //open in browser
-        $mpdf->Output();
 
-        //save to server
-        //$mpdf->Output("mydata.pdf",'F');
+$difference = $datetime1->diff($datetime2);
+
+
+if( $difference->d == '0' && $difference ->m == '0' && $difference->y == '0') {
+
+         echo 'on'.$_POST["from_date"] ;
+  }
+
+  else {
+
+         echo 'from'.$_POST["from_date"];'to'.$_POST["to_date"];
+  }
+
 ?>
+
