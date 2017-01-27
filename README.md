@@ -1,4 +1,11 @@
-# FAPP
-This is an Simple and Fast appliction to quickly generate application letters of various reasons. FAPP stands for Fast Application.
+[!fapp-logo](https://raw.githubusercontent.com/neutrinoguy/FAPP/fapp-alpha/img/fapp.png)   # FAPP   [!fapp-logo](https://raw.githubusercontent.com/neutrinoguy/FAPP/fapp-alpha/img/fapp.png)
 
-Technologies 1) Bootstrap 2) PHP
+## Description
+FAPP stands for Fast Application. It can generate application letters for various reasons in seconds.
+
+## Technologies
+* Bootstrap 3
+* PHP5
+
+## License
+MIT &copy; 2017
