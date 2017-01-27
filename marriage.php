@@ -95,7 +95,7 @@
           <div class="form-group">
             <label for="from_date" class="col-sm-2 control-label">From</label>
             <div class="col-sm-10">
-              <input type="date" class="form-control" id="dp1" name="from_date" placeholder="12/01/17" value="">
+              <input type="text" class="form-control" id="dp1" name="from_date" placeholder="12/01/17" value="">
             </div>
           </div>
           
@@ -104,7 +104,7 @@
           <div class="form-group">
             <label for="to_date" class="col-sm-2 control-label">To</label>
             <div class="col-sm-10">
-              <input type="date" class="form-control" id="dp2" name="to_date" placeholder="18/01/17" value="">
+              <input type="text" class="form-control" id="dp2" name="to_date" placeholder="18/01/17" value="">
             </div>
           </div>
           
