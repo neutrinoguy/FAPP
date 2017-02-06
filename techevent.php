@@ -46,7 +46,7 @@
          <h1>Leave application for Tech event</h1>
 
 
-            <form class="form-horizontal" role="form" method="post" action="application.php">
+            <form class="form-horizontal" role="form" method="post" action="app.php">
           <div class="form-group">
             <label for="to" class="col-sm-2 control-label">To</label>
             <div class="col-sm-10">
