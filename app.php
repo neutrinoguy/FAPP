@@ -1,22 +1,56 @@
+
+<?php 
+
+
+$datetime1 = new DateTime($_POST["from_date"]);
+
+$datetime2 = new DateTime($_POST["to_date"]);
+
+
+$difference = $datetime1->diff($datetime2);
+
+
+if( $difference->d == '0' && $difference ->m == '0' && $difference->y == '0') {
+
+		
+
+         $data ='on'.'&nbsp;'.$_POST["from_date"] ;
+
+       
+
+       
+  }
+
+  else {
+
+         $data = 'from'.'&nbsp;'.$_POST["from_date"].'&nbsp;'.'to'.'&nbsp;'.$_POST["to_date"];
+  }
+
+
+  
+
+?>
+
+
 <!DOCTYPE html>
 <head>
 <title>Application</title>
 </head>
 <body>
 <div dir="ltr" style="text-align: left;" trbidi="on">
-&nbsp;To,<br />
-&nbsp;<?php echo $_POST["to"]; ?><br />
-&nbsp;<?php echo $_POST["department"]; ?> Department,<br />
-&nbsp;SVBIT, Vasan.<br />
+&nbsp;&nbsp;To,<br />
+&nbsp;&nbsp;<?php echo $_POST["to"]; ?><br />
+&nbsp;&nbsp;<?php echo $_POST["department"]; ?> Department,<br />
+&nbsp;&nbsp;SVBIT, Vasan.<br />
 <br />
-&nbsp;Date :<?php echo date("d/m/Y"); ?><br />
+&nbsp;Date : <?php echo date("d/m/Y"); ?><br />
 <div style="text-align: center;">
 &nbsp;&nbsp;<b>Subject: Application for Leave</b></div>
 <div style="text-align: center;">
 <br /></div>
 &nbsp;Respected Sir/Madam,<br />
 <br />
-&nbsp;Myself,<?php echo $_POST["name"]; ?> from <?php echo $_POST["department"]; ?> class En-no <?php echo $_POST["en-no"]; ?>.I have to attend a <?php echo $_POST["reason"]; ?> <?php $_POST["$day_format"]; ?> .So, I request you to grant my leave.
+&nbsp;Myself,<?php echo $_POST["name"]; ?> from <?php echo $_POST["department"]; ?> class En-no <?php echo $_POST["en-no"]; ?>.I have to attend a <?php echo $_POST["reason"]; ?> <?php echo $data ; ?>.So, I request you to grant my leave.
 <br />
 <br />
 &nbsp;Awaiting your favourable reply,Thank you.<br />
@@ -29,7 +63,6 @@
 &nbsp;<?php echo date("d/m/Y"); ?></div>
 </body>
 </html>
-
 
 <?php
 
@@ -52,3 +85,5 @@ $body = ob_get_clean();
         //save to server
         //$mpdf->Output("mydata.pdf",'F');
 ?>
+
+
