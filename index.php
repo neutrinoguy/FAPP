@@ -48,8 +48,8 @@
 
 <form action="" method="post">
 <select name="reason">
-<option value="/FAPP/techevent.php">Techevent</option>
-<option value="/FAPP/marriage.php">Marraige</option>
+<option value="/FAPP/tech.php">Techevent</option>
+<option value="/FAPP/marr.php">Marraige</option>
 </select>
 <input type="submit" name="submit" value="Go" />
 </form>

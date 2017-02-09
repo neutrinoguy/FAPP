@@ -50,7 +50,7 @@ if( $difference->d == '0' && $difference ->m == '0' && $difference->y == '0') {
 <br /></div>
 &nbsp;Respected Sir/Madam,<br />
 <br />
-&nbsp;Myself,<?php echo $_POST["name"]; ?> from <?php echo $_POST["department"]; ?> class En-no <?php echo $_POST["en-no"]; ?>.I have to attend a <?php echo $_POST["reason"]; ?> <?php echo $data ; ?>.So, I request you to grant my leave.
+&nbsp;Myself,<?php echo $_POST["name"]; ?> from <?php echo $_POST["department"]; ?> class En-no <?php echo $_POST["eno"]; ?>.I have to attend a <?php echo $_POST["reason"]; ?> <?php echo $data ; ?>.So, I request you to grant my leave.
 <br />
 <br />
 &nbsp;Awaiting your favourable reply,Thank you.<br />
@@ -63,6 +63,7 @@ if( $difference->d == '0' && $difference ->m == '0' && $difference->y == '0') {
 &nbsp;<?php echo date("d/m/Y"); ?></div>
 </body>
 </html>
+
 
 <?php
 
@@ -84,6 +85,8 @@ $body = ob_get_clean();
 
         //save to server
         //$mpdf->Output("mydata.pdf",'F');
+
+
 ?>
 
 
