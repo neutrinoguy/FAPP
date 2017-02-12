@@ -79,7 +79,7 @@
       <div class="form-group">
         <label class="col-md-4 control-label">From-Date</label>
         <div class="col-md-6  inputGroupContainer">
-          <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+          <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
             <input name="from_date" id="dpd1" placeholder="01/02/2017" class="form-control" type="text" value="">
           </div>
         </div>
@@ -88,7 +88,7 @@
        <div class="form-group">
         <label class="col-md-4 control-label">To-Date</label>
         <div class="col-md-6  inputGroupContainer">
-          <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+          <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
             <input name="to_date" id="dpd2" placeholder="09/02/2017" class="form-control" type="text" value="">
           </div>
         </div>
@@ -107,7 +107,7 @@
       <div class="form-group">
         <label class="col-md-4 control-label">Reason</label>
         <div class="col-md-6  inputGroupContainer">
-          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
             <input name="reason" placeholder="Techevent" class="form-control" type="text" value="Marriage">
           </div>
         </div>
@@ -269,7 +269,7 @@
         var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
 
         var checkin = $('#dpd1').datepicker({
-          format: 'dd/mm/yyyy',
+          format: 'dd-mm-yyyy',
           onRender: function(date) {
             return date.valueOf() < now.valueOf() ? 'disabled' : '';
           }
@@ -283,7 +283,7 @@
           $('#dpd2')[0].focus();
         }).data('datepicker');
         var checkout = $('#dpd2').datepicker({
-          format: 'dd/mm/yyyy',
+          format: 'dd-mm-yyyy',
           onRender: function(date) {
             return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
           }
