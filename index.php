@@ -10,13 +10,43 @@
     <link rel="icon" href="img/favicon.ico">
 
     <title>FAPP</title>
-
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
-    
-    <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
+
+     <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+ <!-- Bootstrap Material Design -->
+  <link href="css/bootstrap-material-design.css" rel="stylesheet">
+  <link href="css/ripples.min.css" rel="stylesheet">
+
+
+<style>
+.typed-cursor{
+
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+</style>
 
 
   </head>
@@ -33,7 +63,8 @@
             <span class="icon-bar"></span>
           </button>
         
-          <a class="navbar-brand" href="#" >Fast Application-FAPP</a>
+          <a class="navbar-brand" href="#" style="font-size:50px" >FAPP</a>
+
         
         </div>
       </div>
@@ -43,32 +74,47 @@
 
       <div class="starter-template">
          
-         <h1>You are writing application for?</h1>
+         <h1 style="postion:fixed">You are writing application for&nbsp;<span style="color:green" class="element"></span></h1>
 
 
-<form action="" method="post">
-<select name="reason">
-<option value="/FAPP/tech.php">Techevent</option>
-<option value="/FAPP/marr.php">Marraige</option>
-</select>
-<input type="submit" name="submit" value="Go" />
-</form>
+
+        <div class="btn-group">
+              <a href="javascript:void(0)" class="btn btn-warning btn-raised">Reason of Application</a>
+              <a href="#" data-target="#" class="btn btn-warning btn-raised dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/FAPP/tech.php">Techevent</a></li>
+                <li><a href="/FAPP/marr.php">Marriage</a></li>
+              </ul>
+            </div>
+
+
+
 
 
 
         
-      </div>
-
-    </div><!-- /.container -->
+  </div>
+</div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.js"></script>
-    
+    <script src="js/typed.js"></script>
+    <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script>
+    $(function(){
+        $(".element").typed({
+            strings: ["Techevent", "Marraige"],
+            typeSpeed: 0 ,
+            loop: true ,
+            typeSpeed: 100
+        });
+    });
+</script>
 
   <iframe id="iframe-widget" allowfullscreen="" src="" width="300" height="250" frameborder="0"></iframe>
 
@@ -79,7 +125,8 @@
 
 <?php
 
-if(isset($_POST['submit'])){
-    header('Location: '.$_POST['reason']);
-    exit;
-}
+//if(isset($_POST['submit'])){
+    //header('Location: '.$_POST['reason']);
+    //exit;
+//}
+?> 

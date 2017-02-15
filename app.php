@@ -38,6 +38,14 @@ if( $difference->d == '0' && $difference ->m == '0' && $difference->y == '0') {
 </head>
 <body>
 <div dir="ltr" style="text-align: left;" trbidi="on">
+<img style="float:left;max-width:100px" src="img/fapp_logo.png" />
+<img style="float:right;max-width:100px" src="img/fapp_logo.png" />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 &nbsp;&nbsp;To,<br />
 &nbsp;&nbsp;<?php echo $_POST["to"]; ?><br />
 &nbsp;&nbsp;<?php echo $_POST["department"]; ?> Department,<br />
