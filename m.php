@@ -17,120 +17,78 @@
 <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="css/main.css" rel="stylesheet">
+ <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap Material Design -->
+  <link href="css/bootstrap-material-design.css" rel="stylesheet">
+  <link href="css/ripples.min.css" rel="stylesheet">
 </head>
-
-<body> 
-
-	 <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        
-          <a class="navbar-brand" href="#" >Fast Application-FAPP</a>
-        
-        </div>
-      </div>
-    </nav>
-
-<div class="container">
+<body style="background-image:url('img/black.jpg');">
+	<div class="container">
 <div class="starter-template">
-         
-         
+<form class="form-horizontal" action="app.php" method="post"  id="marriage" autocomplete="off">
+<fieldset>
 
- <form class="form-horizontal" action="app.php" method="post"  id="marriage" autocomplete="off">
- 	<fieldset>
+<div class="form-group label-static">
+   <div class="input-group"> <span class="input-group-addon"><i class="material-icons">face</i></span>
+    <input class="form-control" id="#" placeholder="Name" name="name" type="text">
+	</div>
+</div>
 
- 		<legend>Leave Application For Marriage</legend>
-
- 	<div class="form-group">
-        <label class="col-md-4 control-label">To</label>
-        <div class="col-md-6  inputGroupContainer">
-          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input  name="to" placeholder="The Class Co-ordinator" class="form-control"  type="text">
-          </div>
-        </div>
-      </div>
+<div class="form-group label-static">
+   <div class="input-group"> <span class="input-group-addon"><i class="material-icons">forward</i></span>
+    <input class="form-control" id="#" placeholder="To" name="to" type="text">
+	</div>
+</div>
 
 
-     <div class="form-group">
-        <label class="col-md-4 control-label">Department</label>
-        <div class="col-md-6  inputGroupContainer">
-          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-            <input name="department" placeholder="Computer" class="form-control" type="text">
-          </div>
-        </div>
-      </div>
+<div class="form-group label-static">
+   <div class="input-group"> <span class="input-group-addon"><i class="material-icons">date_range</i></span>
+    <input class="form-control" id="dpd1" placeholder="From Date" name="from_date" readonly="readonly"  type="text">
+	</div>
+</div>
+
+<div class="form-group label-static">
+   <div class="input-group"> <span class="input-group-addon"><i class="material-icons">date_range</i></span>
+    <input class="form-control" id="dpd2" placeholder="To Date" name="to_date" readonly="readonly" type="text">
+	</div>
+</div>
 
 
-      <div class="form-group">
-        <label class="col-md-4 control-label">Name</label>
-        <div class="col-md-6  inputGroupContainer">
-          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input  name="name" placeholder="Raj Patel" class="form-control"  type="text">
-          </div>
-        </div>
-      </div>
+<div class="form-group label-static">
+   <div class="input-group"> <span class="input-group-addon"><i class="material-icons">account_balance</i></span>
+    <input class="form-control" id="#" placeholder="Department" name="department" type="text">
+	</div>
+</div>
 
-      <div class="form-group">
-        <label class="col-md-4 control-label">From-Date</label>
-        <div class="col-md-6  inputGroupContainer">
-          <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-            <input name="from_date" id="dpd1" placeholder="01/02/2017" class="form-control" type="text" value="">
-          </div>
-        </div>
-      </div>
+<div class="form-group label-static">
+   <div class="input-group"> <span class="input-group-addon"><i class="material-icons">explicit</i></span>
+    <input class="form-control" id="#" placeholder="Enrollment number" name="eno" type="text">
+	</div>
+</div>
 
-       <div class="form-group">
-        <label class="col-md-4 control-label">To-Date</label>
-        <div class="col-md-6  inputGroupContainer">
-          <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-            <input name="to_date" id="dpd2" placeholder="09/02/2017" class="form-control" type="text" value="">
-          </div>
-        </div>
-      </div>
+<div class="form-group label-static">
+   <div class="input-group"> <span class="input-group-addon"><i class="material-icons">event_note</i></span>
+    <input class="form-control" id="#" placeholder="Reason" name="reason" type="text" value="Marriage">
+	</div>
+</div>
 
-      <div class="form-group">
-        <label class="col-md-4 control-label">Enrollment-No</label>
-        <div class="col-md-6  inputGroupContainer">
-          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-star"></i></span>
-            <input name="eno" placeholder="140750107054" class="form-control" type="text">
-          </div>
-        </div>
-      </div>
-
-
-      <div class="form-group">
-        <label class="col-md-4 control-label">Reason</label>
-        <div class="col-md-6  inputGroupContainer">
-          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-            <input name="reason" placeholder="Techevent" class="form-control" type="text" value="Marriage">
-          </div>
-        </div>
-      </div>
-
-      
-
-    
-      
-     
-      	<div class="form-group">
+<div class="form-group">
         <label class="col-md-4 control-label"></label>
         <div class="col-md-4">
-          <button type="submit" class="btn btn-success" >Generate<span class="glyphicon glyphicon-send"></span></button>
-          <button type="reset" class="btn btn-warning" >Reset<span class="glyphicon glyphicon-repeat"></span></button>
+          <button type="submit" class="btn btn-raised btn-success">Generate<span class="glyphicon glyphicon-send"></span></button>
+          <button type="reset" class="btn btn-raised btn-warning">Reset<span class="glyphicon glyphicon-repeat"></span></button>
         </div>
       </div>
 
- </fieldset>
+
+
+
+</fieldset>
 </form>
 </div>
 </div>
-
 <!-- JS -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -138,6 +96,11 @@
 <script src="js/bootstrap-datepicker.js"></script>
 <script src="js/p.js"></script>
 <script src="js/index.js"></script>
+<script src="js/ripples.min.js"></script>
+<script src="js/material.min.js"></script>
+<script>
+  $.material.init();
+</script>
 
 <!-- Form Validation -->
 
@@ -256,7 +219,9 @@
 });
 
 </script>
-<!-- Validation over-->
+<!-- Form validation end -->
+
+<!-- Date validation -->
 <script>
   if (top.location != location) {
     top.location.href = document.location.href ;
@@ -292,14 +257,6 @@
         }).data('datepicker');
     });
   </script>
-<!-- Date validation -->
+  <!-- Date Validation end -->
 </body>
 </html>
-
-
-
-
-
-
-
-

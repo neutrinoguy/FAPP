@@ -42,7 +42,7 @@
          
          
 
- <form class="form-horizontal" action="app.php" method="post"  id="marriage">
+ <form class="form-horizontal" action="app.php" method="post"  id="marriage" autocomplete="off">
  	<fieldset>
 
  		<legend>Leave Application For Techevent</legend>

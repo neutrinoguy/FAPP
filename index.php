@@ -51,7 +51,7 @@
 
   </head>
 
-  <body>
+  <body style="background-image:url('img/black.jpg');">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -74,16 +74,17 @@
 
       <div class="starter-template">
          
-         <h1 style="postion:fixed">You are writing application for&nbsp;<span style="color:green" class="element"></span></h1>
+        <h1 style="postion:fixed;color:white;">You are writing application for&nbsp;<span style="color:green" class="element"></span></h1>
 
 
 
         <div class="btn-group">
+
               <a href="javascript:void(0)" class="btn btn-warning btn-raised">Reason of Application</a>
               <a href="#" data-target="#" class="btn btn-warning btn-raised dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="/FAPP/tech.php">Techevent</a></li>
-                <li><a href="/FAPP/marr.php">Marriage</a></li>
+                <li><a href="/FAPP/m.php">Marriage</a></li>
               </ul>
             </div>
 
