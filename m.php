@@ -24,17 +24,22 @@
   <link href="css/bootstrap-material-design.css" rel="stylesheet">
   <link href="css/ripples.min.css" rel="stylesheet">
 </head>
-<body style="background-image:url('img/black.jpg');">
+<body style="background-image:url('img/back1.png');">
 	<div class="container">
 <div class="starter-template">
 <form class="form-horizontal" action="app.php" method="post"  id="marriage" autocomplete="off">
 <fieldset>
+
 
 <div class="form-group label-static">
    <div class="input-group"> <span class="input-group-addon"><i class="material-icons">face</i></span>
     <input class="form-control" id="#" placeholder="Name" name="name" type="text">
 	</div>
 </div>
+
+
+
+
 
 <div class="form-group label-static">
    <div class="input-group"> <span class="input-group-addon"><i class="material-icons">forward</i></span>

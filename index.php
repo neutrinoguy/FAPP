@@ -74,7 +74,7 @@
 
       <div class="starter-template">
          
-        <h1 style="postion:fixed;color:white;">You are writing application for&nbsp;<span style="color:green" class="element"></span></h1>
+        <h1 style="postion:fixed;color:white;"><b>You are writing application for</b>&nbsp;<span style="color:green" class="element"></span></h1>
 
 
 
@@ -93,8 +93,13 @@
 
 
 
-        
-  </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+
+<h4 style="color:white;text-align:center;font-size:25px">Did'nt find the application you are looking for&nbsp;<a href="#">Submit a request here</a></h4>
 </div><!-- /.container -->
 
 
