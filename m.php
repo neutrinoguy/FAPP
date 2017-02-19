@@ -36,49 +36,68 @@
 
 
 <div class="form-group">
-  <div class="col-md-6  inputGroupContainer">
-<div class="form-group label-static">
+  <div class="col-sm-6  inputGroupContainer">
+    <div class="form-group label-static">
    <div class="input-group"> <span class="input-group-addon"><i class="material-icons">face</i></span>
-    <input class="form-control" id="#" placeholder="Name" name="name" type="text">
+    <input class="form-control" id="#" placeholder="Name" name="name" type="text">    
 	</div>
-</div></div>
+</div>
+</div>
+
+<div class="col-sm-6  inputGroupContainer">
+    <div class="form-group label-static">
+   <div class="input-group"> <span class="input-group-addon"><i class="material-icons">explicit</i></span>
+    <input class="form-control" id="#" placeholder="Enrollment number" name="eno" type="text">   
+  </div>
+</div>
+</div>
+
 </div>
 
 
 
 
+<div class="form-group">
 
+<div class="col-sm-6  inputGroupContainer">
 <div class="form-group label-static">
    <div class="input-group"> <span class="input-group-addon"><i class="material-icons">forward</i></span>
     <input class="form-control" id="#" placeholder="To" name="to" type="text">
 	</div>
 </div>
+</div>
 
 
+<div class="col-sm-6  inputGroupContainer">
+<div class="form-group label-static">
+   <div class="input-group"> <span class="input-group-addon"><i class="material-icons">account_balance</i></span>
+    <input class="form-control" id="#" placeholder="Department" name="department" type="text">
+  </div>
+</div>
+</div>
+</div>
+
+<div class="form-group">
+  <div class="col-sm-6 inputGroupContainer">
 <div class="form-group label-static">
    <div class="input-group"> <span class="input-group-addon"><i class="material-icons">date_range</i></span>
     <input class="form-control" id="dpd1" placeholder="From Date" name="from_date" readonly="readonly"  type="text">
 	</div>
 </div>
+</div>
 
+
+
+<div class="col-sm-6 inputGroupContainer">
 <div class="form-group label-static">
    <div class="input-group"> <span class="input-group-addon"><i class="material-icons">date_range</i></span>
     <input class="form-control" id="dpd2" placeholder="To Date" name="to_date" readonly="readonly" type="text">
-	</div>
+  </div>
+</div>
+</div>
 </div>
 
 
-<div class="form-group label-static">
-   <div class="input-group"> <span class="input-group-addon"><i class="material-icons">account_balance</i></span>
-    <input class="form-control" id="#" placeholder="Department" name="department" type="text">
-	</div>
-</div>
-
-<div class="form-group label-static">
-   <div class="input-group"> <span class="input-group-addon"><i class="material-icons">explicit</i></span>
-    <input class="form-control" id="#" placeholder="Enrollment number" name="eno" type="text">
-	</div>
-</div>
 
 <div class="form-group label-static">
    <div class="input-group"> <span class="input-group-addon"><i class="material-icons">event_note</i></span>
