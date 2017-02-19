@@ -99,8 +99,13 @@
 <br />
 <br />
 
-<h4 style="color:white;text-align:center;font-size:25px">Did'nt find the application you are looking for&nbsp;<a href="#">Submit a request here</a></h4>
+<h4 style="font-family:Verdana;color:white;text-align:center;font-size:25px">Did'nt find the application you are looking for?&nbsp;<a href="https://goo.gl/forms/jzMLDHztY0zr2Bxy1">Submit a request here</a></h4>
 </div><!-- /.container -->
+
+<footer>
+<h6 style="text-align:center;font-size:20px;color:white">Made with&nbsp;<img class="heart" src="img/heart.png" />&nbsp;at <span style="font-size:20px;color:red">SVBIT</span></h6>
+</footer>
+
 
 
     <!-- Bootstrap core JavaScript
@@ -122,9 +127,13 @@
     });
 </script>
 
+
+
   <iframe id="iframe-widget" allowfullscreen="" src="" width="300" height="250" frameborder="0"></iframe>
 
+
 </div>
+
 
 </body>
 </html>

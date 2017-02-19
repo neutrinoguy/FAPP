@@ -27,14 +27,21 @@
 <body style="background-image:url('img/back1.png');">
 	<div class="container">
 <div class="starter-template">
+
+
 <form class="form-horizontal" action="app.php" method="post"  id="marriage" autocomplete="off">
 <fieldset>
 
+<legend style="font-family:verdana">Leave Application For Marriage</legend>
 
+
+<div class="form-group">
+  <div class="col-md-6  inputGroupContainer">
 <div class="form-group label-static">
    <div class="input-group"> <span class="input-group-addon"><i class="material-icons">face</i></span>
     <input class="form-control" id="#" placeholder="Name" name="name" type="text">
 	</div>
+</div></div>
 </div>
 
 
