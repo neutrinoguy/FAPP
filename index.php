@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    
 
      <!-- Material Design fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
@@ -51,7 +52,8 @@
 
   </head>
 
-  <body style="background-image:url('img/black.jpg');">
+
+  <body style="background-image:url('img/black2.jpg');">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -70,13 +72,14 @@
       </div>
     </nav>
 
+
+
     <div class="container">
 
-      <div class="starter-template">
-         
-        <h1 style="postion:fixed;color:white;"><b>You are writing application for</b>&nbsp;<span style="color:green" class="element"></span></h1>
+        <div class="starter-template">
+            <h1><b>You are writing application for</b>&nbsp;<span style="color:#02f7b6" class="element"></span></h1>
 
-
+            <br />
 
         <div class="btn-group">
 
@@ -88,23 +91,22 @@
               </ul>
             </div>
 
-
-
-
-
-
 </div>
 <br />
 <br />
 <br />
-<br />
-
-<h4 style="font-family:Verdana;color:white;text-align:center;font-size:25px">Did'nt find the application you are looking for?&nbsp;<a href="https://goo.gl/forms/jzMLDHztY0zr2Bxy1">Submit a request here</a></h4>
+<h4><b>Did'nt find the application you are looking for?&nbsp;</b><a href="https://goo.gl/forms/jzMLDHztY0zr2Bxy1"><b style="color:#29bc2b">Submit a request here</b></a></h4>
 </div><!-- /.container -->
-
+<br />
+<br />
+<br />
 <footer>
-<h6 style="text-align:center;font-size:20px;color:white">Made with&nbsp;<img class="heart" src="img/heart.png" />&nbsp;at <span style="font-size:20px;color:red">SVBIT</span></h6>
+<h6><b>Made with&nbsp;<img class="heart" src="img/heart.png" />&nbsp;at </b><span style="font-size:20px;color:red"><b>SVBIT</b></span></h6>
 </footer>
+
+
+
+
 
 
 
@@ -126,6 +128,8 @@
         });
     });
 </script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
 
 
 
@@ -133,6 +137,7 @@
 
 
 </div>
+
 
 
 </body>

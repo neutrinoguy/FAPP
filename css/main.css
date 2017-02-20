@@ -1,13 +1,22 @@
+
 body {
-	
+
+	min-height: 100%;
+  min-width: 100%;
   padding-top: 50px;
 
 }
+
+
 .starter-template {
+
+  
   padding: 40px 15px;
   text-align: center;
   
 }
+
+
 
 .button {
 	margin: 0;
@@ -23,3 +32,60 @@ body {
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+i {
+	color: black;
+}
+
+
+
+h1 {
+  font-size: 40px;
+  float: center;
+  color: white;
+
+}
+
+h4 {
+  font-size: 30px;
+  font-family: verdana;
+  color: white;
+  text-align: center;
+}
+
+
+h6 {
+
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 767px) {
+
+h1 {
+  font-size: 15px;
+  float: center;
+  color: white;
+
+  }
+
+h4 {
+  font-size: 20px;
+  font-family: verdana;
+  font-weight: bold;
+
+}
+
+
+h6 {
+  font-size: 15px;
+}
+
+
+
+}
+
+
+
+

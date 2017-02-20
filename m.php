@@ -24,7 +24,7 @@
   <link href="css/bootstrap-material-design.css" rel="stylesheet">
   <link href="css/ripples.min.css" rel="stylesheet">
 </head>
-<body style="background-image:url('img/back1.png');">
+<body style="background-image:url('img/back4.jpg');">
 	<div class="container">
 <div class="starter-template">
 
