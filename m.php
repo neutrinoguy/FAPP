@@ -39,7 +39,7 @@
   <div class="col-sm-6  inputGroupContainer">
     <div class="form-group label-static">
    <div class="input-group"> <span class="input-group-addon"><i class="material-icons">face</i></span>
-    <input class="form-control" id="#" placeholder="Name" name="name" type="text">    
+    <input class="form-control" id="" placeholder="Name" name="name" type="text"> 
 	</div>
 </div>
 </div>

@@ -64,6 +64,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+
         
           <a class="navbar-brand" href="#" style="font-size:50px" >FAPP</a>
 
@@ -83,7 +84,7 @@
 
         <div class="btn-group">
 
-              <a href="javascript:void(0)" class="btn btn-warning btn-raised">Reason of Application</a>
+              <a href="javascript:void(0)" class="btn btn-warning btn-raised" data-toggle="dropdown">Reason of Application</a>
               <a href="#" data-target="#" class="btn btn-warning btn-raised dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="/FAPP/tech.php">Techevent</a></li>
@@ -95,7 +96,7 @@
 <br />
 <br />
 <br />
-<h4><b>Did'nt find the application you are looking for?&nbsp;</b><a href="https://goo.gl/forms/jzMLDHztY0zr2Bxy1"><b style="color:#29bc2b">Submit a request here</b></a></h4>
+<h4><b>Didn't find the application you are looking for?&nbsp;</b><a href="https://goo.gl/forms/jzMLDHztY0zr2Bxy1"><b style="color:#29bc2b">Submit a request here</b></a></h4>
 </div><!-- /.container -->
 <br />
 <br />
