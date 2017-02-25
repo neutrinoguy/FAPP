@@ -28,6 +28,37 @@ input::placeholder{
 
 }
 
+/* Ribbon Fork */
+
+.ribbonFork {
+  background-color: #ff1823;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  left: 88%;
+  top: 40px;
+  z-index: 9999;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.ribbonFork a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% Verdana, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin: 1px 0;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 5px #444;
+}
+
+
+
 .heart {
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
@@ -85,6 +116,33 @@ h6 {
   font-size: 15px;
 }
 
+
+  .ribbonFork {
+  background-color: #ff1823;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  left: 60%;
+  top: 30px;
+  z-index: 9999;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.ribbonFork a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% Verdana, Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  margin: 1px 0;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 5px #444;
+}
 
 
 }

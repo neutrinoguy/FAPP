@@ -47,24 +47,81 @@
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+/* Ribbon Fork */
+
+.ribbonFork {
+  background-color: #ff1823;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  left: 88%;
+  top: 40px;
+  z-index: 9999;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.ribbonFork a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% Verdana, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin: 1px 0;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 5px #444;
+}
+
+
+@media (max-width: 767px) {
+
+  .ribbonFork {
+  background-color: #ff1823;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  left: 60%;
+  top: 30px;
+  z-index: 9999;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.ribbonFork a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% Verdana, Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  margin: 1px 0;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 5px #444;
+}
+
+}
+
+
 </style>
 
 
   </head>
 
-
   <body style="background-image:url('img/black2.jpg');">
+
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
+          
         
           <a class="navbar-brand" href="#" style="font-size:50px" >FAPP</a>
 
@@ -73,7 +130,9 @@
       </div>
     </nav>
 
-
+      <div class="ribbonFork">
+                                <a href="https://github.com/neutrinoguy/FAPP/">Fork me on Github</a>
+                            </div>
 
     <div class="container">
 

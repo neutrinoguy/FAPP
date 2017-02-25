@@ -12,7 +12,7 @@
 <meta name="author" content="Aagam Shah">
 <!-- Link Tags -->
 <link rel="icon" href="img/favicon.ico">
-<link href="css/datepicker.css" rel="stylesheet">
+<link href="css/bootstrap-datepicker.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -33,6 +33,9 @@
 <fieldset>
 
 <legend style="font-family:verdana">Leave Application For Marriage</legend>
+
+
+
 
 
 <div class="form-group">
@@ -82,7 +85,7 @@
 <div class="form-group label-static">
    <div class="input-group"> <span class="input-group-addon"><i class="material-icons">date_range</i></span>
     <input class="form-control" id="dpd1" placeholder="From Date" name="from_date" readonly="readonly"  type="text">
-	</div>
+  </div>
 </div>
 </div>
 
@@ -254,40 +257,40 @@
 
 <!-- Date validation -->
 <script>
-  if (top.location != location) {
-    top.location.href = document.location.href ;
-  }
-    $(function(){
-      window.prettyPrint && prettyPrint();
-      
-        // disabling dates
-        var nowTemp = new Date();
-        var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+var startDate = new Date('01/01/2012');
+var FromEndDate = new Date();
+var ToEndDate = new Date();
 
-        var checkin = $('#dpd1').datepicker({
-          format: 'dd-mm-yyyy',
-          onRender: function(date) {
-            return date.valueOf() < now.valueOf() ? 'disabled' : '';
-          }
-        }).on('changeDate', function(ev) {
-          if (ev.date.valueOf() > checkout.date.valueOf()) {
-            var newDate = new Date(ev.date)
-            newDate.setDate(newDate.getDate());
-            checkout.setValue(newDate);
-          }
-          checkin.hide();
-          $('#dpd2')[0].focus();
-        }).data('datepicker');
-        var checkout = $('#dpd2').datepicker({
-          format: 'dd-mm-yyyy',
-          onRender: function(date) {
-            return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
-          }
-        }).on('changeDate', function(ev) {
-          checkout.hide();
-        }).data('datepicker');
-    });
-  </script>
+ToEndDate.setDate(ToEndDate.getDate()+365);
+
+$('#dpd1').datepicker({
+    format: 'dd-mm-yyyy' ,
+    weekStart: 1,
+    startDate: '01/01/2012',
+    endDate: FromEndDate, 
+    autoclose: true
+})
+    .on('changeDate', function(selected){
+        startDate = new Date(selected.date.valueOf());
+        startDate.setDate(startDate.getDate(new Date(selected.date.valueOf())));
+        $('#dpd2').datepicker('setStartDate', startDate);
+    }); 
+$('#dpd2')
+    .datepicker({
+        format: 'dd-mm-yyyy' ,
+        weekStart: 1,
+        startDate: startDate,
+        endDate: ToEndDate,
+        autoclose: true
+    })
+    .on('changeDate', function(selected){
+        FromEndDate = new Date(selected.date.valueOf());
+        FromEndDate.setDate(FromEndDate.getDate(new Date(selected.date.valueOf())));
+        $('#dpd1').datepicker('setEndDate', FromEndDate);
+    });    
+        
+
+</script>
   <!-- Date Validation end -->
 </body>
 </html>
