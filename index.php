@@ -65,12 +65,12 @@
                   <span class="icon-bar"></span>
                 </button>
         
-          <a class="navbar-brand" href="#" style="font-size:50px" >FAPP</a>
+          <a class="navbar-brand" href="#" style="font-size:50px" >FAPP<span style="font-size:15px;font-family:verdana;">~Fast Application</span></a>
 
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav">
-                  <li class="active"><a href="javascript:void(0)">Credits</a></li>
+                  <li class="active"><a href="credits.php">Credits</a></li>
                 </ul>
                 
   </div>      
@@ -94,7 +94,7 @@
               <a href="javascript:void(0)" class="btn btn-warning btn-raised" data-toggle="dropdown">Reason of Application</a>
               <a href="#" data-target="#" class="btn btn-warning btn-raised dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="/FAPP/tech.php">Techevent</a></li>
+                <li><a href="#">Techevent</a></li>
                 <li><a href="/FAPP/m.php">Marriage</a></li>
               </ul>
             </div>
