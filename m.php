@@ -2,6 +2,55 @@
 <html class="no-js" lang="en">
 <head>
 <title>FAPP</title>
+
+
+
+
+<!--
+
+ ______________________________________
+/ Welcome by Guardian of FAPP. Seeing  \
+| source code is a good thing to learn |
+| new things. Your are on the path of  |
+\ being a developer. Best of luck ~fapp/
+ --------------------------------------
+   \
+    \
+         _____
+       .'/L|__`.
+      / =[_]O|` \
+      |"+_____":|
+    __:='|____`-:__
+   ||[] ||====| []||
+   ||[] | |=| | []||
+   |:||_|=|U| |_||:|
+   |:|||]_=_ =[_||:| LS
+   | |||] [_][]C|| |
+   | ||-'"""""`-|| |
+   /|\\_\_|_|_/_//|\
+  |___|   /|\   |___|
+  `---'  |___|  `---'
+         `---'
+
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Meta Tags -->
 <meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
